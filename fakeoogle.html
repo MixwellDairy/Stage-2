@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
+    <title>Clinical Archive</title>
     <style>
         /* Modern Minimal Google Aesthetics */
         :root {
@@ -511,13 +511,13 @@
                 <!-- Single Fixed Prop Result -->
                 <div class="result-item">
                     <div class="result-url">
-                        <span>https://www.apexpharmaceuticals.com</span> › research › trials
+                        <span>https://www.archive-lab.example</span> › casefiles › pathology
                     </div>
                     <div class="result-title">
-                        <a onclick="triggerDocView()">Apex Pharmaceuticals - Phase 2 Trial Summary (#APX-0092)</a>
+                        <a onclick="triggerDocView()">Unknown Disease - Stage 2 Case Summary (#UXD-0003)</a>
                     </div>
                     <div class="result-snippet">
-                        Subject: Evaluation of Unknown APX-0092. <span class="highlight">Status: UNKNOWN.</span> Location: Sector 4 Testing Facility. All external documentation restricted under Protocol 7. Results pending secondary review...
+                        Subject: Evaluation of Stage 2 unknown disease. <span class="highlight">Status: DANGEROUS / UNKNOWN.</span> Location: Sector 4 Observation Wing. Bloodwork pending secondary review. Only three confirmed sightings on record...
                     </div>
                 </div>
 
@@ -555,57 +555,58 @@
             <div class="doc-paper">
                 <div class="doc-header">
                     <div>
-                        <div class="doc-company">APEX PHARMACEUTICALS</div>
-                        <div style="font-size: 12px; color: #5f6368; margin-top: 4px; font-family: Roboto, Arial, sans-serif;">GLOBAL RESEARCH & DEVELOPMENT DIVISION</div>
+                        <div class="doc-company">UNKNOWN PATHOLOGY ARCHIVE</div>
+                        <div style="font-size: 12px; color: #5f6368; margin-top: 4px; font-family: Roboto, Arial, sans-serif;">CLINICAL OBSERVATION DIVISION</div>
                     </div>
                     <div class="doc-badge">Restricted Access</div>
                 </div>
 
                 <div style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 25px; font-family: Roboto, Arial, sans-serif;">
-                    CLINICAL TRIAL SUMMARY REPORT
+                    STAGE 2 UNKNOWN DISEASE REPORT
                 </div>
 
                 <table class="doc-table">
                     <tr>
                         <td class="label">TRIAL ID:</td>
-                        <td>APX-0092-PH3</td>
+                        <td>UXD-0003-ST2</td>
                         <td class="label">DATE:</td>
                         <td>OCTOBER 14, 2024</td>
                     </tr>
                     <tr>
                         <td class="label">COMPOUND:</td>
-                        <td>APX-0092 (Neuro-Synaptic Modulator)</td>
+                        <td>Unknown Disease Alpha (Unclassified Pathogen)</td>
                         <td class="label">PHASE:</td>
-                        <td>PHASE 2 (HUMAN)</td>
+                        <td>STAGE 2 (UNKNOWN)</td>
                     </tr>
                     <tr>
                         <td class="label">SPONSOR:</td>
-                        <td>Apex Bio-Labs Inc. / Sector 4</td>
+                        <td>Sector 4 / Clinical Containment</td>
                         <td class="label">STATUS:</td>
-                        <td><span class="status-tag">COMPLETED</span></td>
+                        <td><span class="status-tag">3 CONFIRMED</span></td>
                     </tr>
                 </table>
 
                 <div class="doc-section-title">1. OBJECTIVE & METHODOLOGY</div>
-                <div class="doc-text">Evaluation of compound APX-0092 administered orally in double-blind, placebo-controlled trials. Primary objective focused on hyper-focused memory retention and cognitive acceleration over a 90-day period.
+                <div class="doc-text">Evaluation of an unidentified Stage 2 condition with abnormal bloodwork patterns, tissue strain, and uneven recovery markers. Primary objective focused on identifying the source of the disorder, monitoring progression, and documenting the unusual sinewy changes over a 90-day period.
 
-Test Subjects: 120 Candidates (Cohort Alpha & Beta)
-Dosage Standard: 25mg daily via delayed release capsule.</div>
+Case Files: 3 Confirmed Reports (Cohort Unknown)
+Bloodwork Panels: Repeated, inconsistent, and difficult to interpret.
+Observed Notes: rope-like tension beneath the skin, sinewy texture shifts, and irregular inflammatory spikes.</div>
 
                 <div class="doc-section-title">2. PRIMARY FINDINGS</div>
-                <div class="doc-text">- 98.4% of subjects demonstrated rapid memory consolidation within 48 hours.
-- Neural connectivity metrics expanded by an average of 34% across primary pathways.
-- Mild temporary secondary side effects noted during Phase II were stabilized under current formulation.</div>
+                <div class="doc-text">- Across all known reports, bloodwork showed fluctuating markers with no stable baseline within 48 hours.
+- Tissue-strain readings increased across primary pathways, with sinewy formations appearing in affected areas.
+- The condition appears very dangerous, highly obscure, and difficult to classify. Temporary stabilization has not been achieved.</div>
 
                 <div class="doc-section-title">3. PRINCIPAL INVESTIGATOR NOTES</div>
-                <div class="doc-text">"Phase III trial objectives have been fully met. Compound APX-0092 demonstrates remarkable efficacy. All secondary metrics remain stable under Protocol 7 parameters. Document archived under restricted clearance."
+                <div class="doc-text">"Stage 2 classification remains unresolved. The unknown disease demonstrates unusual bloodwork, sinewy changes, and severe instability. Only three confirmed sightings exist. Document archived under restricted clearance."
 
 Signed,
-Dr. A. Vance, Lead Clinical Research Specialist
-Apex Pharmaceuticals - Division of Applied Sciences</div>
+Dr. A. Vance, Lead Clinical Observation Specialist
+Unknown Pathology Archive - Division of Applied Sciences</div>
 
                 <div style="margin-top: 40px; border-top: 1px dashed #dadce0; padding-top: 15px; font-size: 11px; color: #5f6368; text-align: center; font-family: Roboto, Arial, sans-serif;">
-                    CONFIDENTIAL - FOR INTERNAL APEX PHARMACEUTICAL USE ONLY - DO NOT DISTRIBUTE
+                    CONFIDENTIAL - INTERNAL CLINICAL USE ONLY - DO NOT DISTRIBUTE
                 </div>
             </div>
 
@@ -640,7 +641,7 @@ Apex Pharmaceuticals - Division of Applied Sciences</div>
         function handleHomeSearch(event) {
             event.preventDefault();
             const inputVal = document.getElementById('homeSearchInput').value;
-            document.getElementById('resultsSearchInput').value = inputVal || "clinical trials phase 3 apex compound";
+            document.getElementById('resultsSearchInput').value = inputVal || "stage 2 unknown disease bloodwork";
             
             simulateLoading('resultsView', () => {
                 updateStats();
