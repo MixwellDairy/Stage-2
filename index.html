@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage 2 movie homepage</title>
+    <meta name="description" content="Stage 2 movie production homepage">
+    <title>Stage 2 - Movie Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 60px 40px;
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+        
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        a {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        a:active {
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-    <a href="fakeoogle.html">Fake google page for filming</a>
-    <a href="screenplay.pdf">Screenplay</a>
+    <div class="container">
+        <h1>Stage 2</h1>
+        <p class="subtitle">Movie Production</p>
+        
+        <nav>
+            <a href="fakeoogle.html">Fake Google Page</a>
+            <a href="screenplay.pdf" download>Download Screenplay</a>
+        </nav>
+    </div>
 </body>
 </html>
